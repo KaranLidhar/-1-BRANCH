@@ -540,7 +540,7 @@ export default function BranchOps() {
       <div style={{padding:'10px 20px 0'}}>
         <div className='ai-bar'>
           <div style={{fontSize:9,color:'#a855f7',letterSpacing:'.08em',textTransform:'uppercase',marginBottom:6,fontWeight:700}}>⚡ AI Command Bar</div>
-          <div style={{display:'flex',gap:8'}}>
+          <div style={{display:'flex',gap:8}}>
             <textarea className='ai-input' rows={2} value={aiInput} onChange={e=>setAiInput(e.target.value)}
               onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();runAI(aiInput)}}}
               placeholder={'"Ground 529835 for CFI"  "529835 going out to John back June 20"  "Need a 26ft tomorrow hold it"  "529835 is back"  (Enter to run)'}/>
